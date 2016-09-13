@@ -1,0 +1,270 @@
+/* @font-face {
+    font-family: 'DIN 1451';
+    font-style: normal;
+    font-weight: 400;
+    src: local('DIN 1451'), local('DIN1451'), url('/pop/views/fonts/din1451.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+} */
+
+body {
+    background: #333 url('/pop/views/img/classy_fabric.png');
+    color: #212020;
+    font: 14px/1.5em "Open Sans", "Segoe UI", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.accordionButton {
+    cursor: hand;
+    cursor: pointer;
+}
+
+#container {
+    background: #f3f3f3 url('/pop/views/img/bgnoise.gif');
+    box-shadow: 0 20px 40px #222;
+}
+
+#wrapper {
+    /* background: url('/pop/templates/img/hk.jpg') top no-repeat; */
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px 0;
+}
+
+#wrapper a {
+    color: #a44;
+    text-decoration: none;
+}
+
+#wrapper a:hover {
+    text-decoration: underline;
+    /* background-color: #69f; */
+}
+
+#wrapper li {
+    line-height: 1.5em;
+    /* margin-bottom: 24px; */
+    margin-bottom: 12px;
+}
+
+#wrapper .grid2 {
+    column-count: 2;
+    column-gap: 20px;
+}
+
+#wrapper h1, #wrapper h2, #wrapper h3, #wrapper h4, #wrapper h5, #wrapper h6 {
+    font-family: 'Helvetica Neue Light', HelveticaNeue-Light, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 24px;
+    text-shadow: #fff 0px 1px 0px;
+}
+
+#wrapper h1, #wrapper h2, #wrapper h3, #wrapper h4 {
+    /* letter-spacing: -1px; */
+}
+
+#wrapper h1 {
+    /* I think it came from http://goo.gl/NyEKK */
+    text-align: center;
+    font-size: 2em; /* 24px --> 24 / 16 = 1.5 */
+    line-height: 1em; /* 24px --> 24 / 24 = 1 */
+}
+
+#wrapper h2 {
+    font-size: 1.375em; /* 22px --> 22 / 16 = 1.375 */
+    line-height: 1.0909em; /* 24px --> 24 / 22 = 1.090909(09) */
+}
+
+#wrapper h3 {
+    font-size: 1.25em; /* 20px --> 20 / 16 = 1.25 */
+    line-height: 1.2em; /* 24px --> 24 / 20 = 1.2 */
+}
+
+#wrapper h4 {
+    font-size: 1.125em; /* 18px --> 18 / 16 = 1.125 */
+    line-height: 1.333em; /* 24px --> 24 / 18 = 1.3333333(3) */
+}
+
+#wrapper h5, #wrapper h6 {
+    font-size: 1em; /* 16px --> 16 / 16 = 1 */
+    line-height: 1.5em; /* 24px --> 24 / 16 = 1.5 */
+}
+
+#wrapper hr {
+    border: 5px #eee solid;
+    margin: 24px auto;
+    width: 50%;
+}
+
+#menu {
+    text-align: center;
+    margin: 24px 0 36px 0;
+    /* margin: 150px 24px 24px 24px; */
+    padding: 24px;
+    background: #212020 url('/pop/views/img/classy_fabric.png');
+    opacity: 0.8;
+    /* background: rgba(136,0,17,0.5); */
+    border-radius: 2px;
+}
+
+#menu li {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li a {
+    color: #fff;
+    padding: 24px 20px;
+    text-decoration: none;
+}
+
+#menu li a.link:hover {
+    /* text-decoration: underline; */
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.1);
+    background: #700;
+}
+
+#content {
+    padding: 0 0 12px 0;
+}
+
+/* #content *::selection {
+    background: #543;
+} */
+/* #content ul, #content ol {
+    margin-right: 20px;
+} */
+#footer {
+    color: #ccc;
+    font-size: 12px;
+    /* margin-top: 24px; */
+    text-align: center;
+}
+
+#footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+#footer h2 {
+    font-family: 'Helvetica Neue Light', HelveticaNeue-Light, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border-top: 2px #a21 solid;
+    font-size: 14px;
+    margin: 12px 0;
+    padding-top: 12px;
+}
+
+#footer ul {
+    padding: 20px 0;
+}
+
+#footer li {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.warn {
+    margin: 36px 0;
+    padding: 6px;
+    background-color: #fff090;
+    border: 1px #fc3 solid;
+    border-radius: 6px;
+    color: #960;
+}
+
+.inner_frame {
+    /* http://css1k.com/styles/swiss.css */
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15), 0px 1px rgba(255, 255, 255, 0.25);
+    padding: 20px;
+}
+
+/* Smartphones (portrait) ----------- */
+@media screen and (max-width : 480px) {
+    #wrapper {
+        margin: 0 auto;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    #content {
+        padding: 0px 10px 12px;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media screen and (max-width : 800px) {
+    #wrapper {
+        margin: 0 auto;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    #content {
+        padding: 0px 10px 12px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    /* mobile landscape */
+    body, body #wrapper, body #container, #content * {
+        min-width: 0 !important;
+        width: auto;
+        /* overflow: hidden; */
+    }
+
+    #menu {
+        margin-top: 0;
+        padding: 0;
+    }
+
+    #menu li:first-child {
+        /* logo */
+        display: block;
+        margin: 0 auto;
+    }
+
+    #menu li:first-child a {
+        padding: 12px 0 0 0;
+    }
+
+    #menu li:first-child img {
+        margin: 0 !important;
+    }
+
+    #menu a {
+        display: block;
+        clear: both;
+    }
+
+    #content * {
+        max-width: 100% !important;
+    }
+
+    #footer, #footer div {
+        max-width: 100%;
+    }
+
+    #footer li {
+        text-align: center;
+    }
+}

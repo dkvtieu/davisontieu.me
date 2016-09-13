@@ -1,0 +1,41 @@
+input, textarea {
+    border: 1px #bbb solid;
+    border-radius: 6px;
+    margin: 6px;
+    padding: 6px;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0 0 6px #36c;
+}
+
+textarea {
+    vertical-align: top;
+}
+
+fieldset {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px rgba(255, 255, 255, 0.3);
+    padding: 20px;
+}
+
+button, .button, input[type="button"], input[type="submit"] {
+    font: 13px/18px 'helvetica neue', helvetica, arial, sans-serif;
+    display: inline-block;
+    padding: 4px 10px;
+    color: #333;
+    text-align: center;
+    vertical-align: middle;
+    background: #f7f6f5;
+    border: 1px #ddd solid;
+    border-bottom-color: #bbb;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px #bbb;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover, .button:hover, input[type="button"]:hover, input[type="submit"]:hover {
+    background: #fcfcfc;
+}

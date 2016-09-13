@@ -1,0 +1,185 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    color: #eee;
+    background-color: #443;
+    font-family: 'Open Sans', Helvetica, Arial, 'Liberation Sans', sans-serif;
+    font-size:13.5px;
+    line-height:20px;
+}
+a, a:hover, a:active, a:visited {
+    color: #fed;
+}
+footer {
+    padding-bottom: 10px;
+}
+h1 {
+    font-size:20px;
+}
+td, th {
+    vertical-align: top;
+}
+th {
+    min-width: 115px;
+}
+#background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#content {
+    background-image: url('../img/trans70.png');
+    position: fixed;
+    /* right: 50px; */
+    right: 0;
+    top: 0;
+    width:100%;
+    max-width: 620px;
+    height: 100%;
+}
+#logo {
+    padding: 30px 30px 0 0;
+    text-align: right;
+}
+#menu {
+    padding: 20px 30px;
+    text-align: right;
+}
+#menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Gotham', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+#menu a:not(:last-child):after {
+    content: " | ";
+    margin: 8px;
+    font-weight: 100;
+    color: #666;
+    color: rgba(127, 127, 127, 0.5);
+}
+#menu img {
+    border: 0;
+    vertical-align: middle;
+}
+#content2 {
+    margin: 20px;
+    text-align: justify;
+    padding-bottom:20px;
+}
+#scroller {
+    overflow: auto;
+    height: 100%;
+}
+
+.bg {
+    position: fixed;
+    left: -10px;
+    top: -10px;
+    bottom: -10px;
+    right: -10px;
+    z-index: -1;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center center;
+    /*-webkit-filter: blur(3px);*/
+}
+
+.calendar {
+    border-radius: 4px;
+    border: 1px #ddd solid;
+    font-family: Gotham, Century Gothic, Verdana;
+}
+.calendar tr {
+    height: 40px;
+}
+.calendar th, .calendar td {
+    border-radius: 2px;
+    width: 40px;
+    min-width: 0px;
+    text-align: center;
+    border: 1px rgba(255,255,255,0.1) solid;
+    vertical-align: middle;
+}
+.calendar th {
+    background-color: rgba(0,0,0,0.5);
+}
+.calendar .active {
+    background-color: rgba(100,150,255,0.5);
+}
+.calendar .today {
+    border: 2px solid rgba(220, 230, 255, 0.4);
+    font-weight: 700;
+}
+.calendar .today.halloween {
+    border-color: rgba(255, 154, 44, 0.4);
+    border-style: dashed;
+}
+.calendar .halloween,.calendar .today.active.halloween {
+    background-color: rgba(255, 181, 100, 0.5);
+}
+.calendar .today.active {
+    background-color: rgba(150, 170, 255, 0.606);
+}
+
+.news {
+    /* used for notices on the home page */
+    background-color:rgba(50,120,255,0.4);
+    border-radius: 4px;
+    padding: 5px 15px 10px;
+}
+.news h3 {
+    margin-top: 10px;
+}
+.news.good {
+    background-color:rgba(50,255,120,0.5);
+}
+.news.bad {
+    background-color:rgba(255,50,120,0.4);
+}
+
+.btn {
+    -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.0470588) 0px 1px 2px 0px;
+    background-color: rgb(81, 163, 81);
+    background-image: linear-gradient(rgb(98, 196, 98), rgb(81, 163, 81));
+    background-position: 0px -15px;
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.0980392);
+    border-radius: 4px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.0470588) 0px 1px 2px 0px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: normal;
+    margin: 0;
+    padding: 4px 12px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: rgba(0, 0, 0, 0.247059) 0px -1px 0px;
+}
+.center {
+    text-align: center;
+}
+.centered {
+    display: block;
+    margin: auto;
+}
+.strike {
+    text-decoration:line-through;
+}
+
+@media screen and (max-width: 800px) {
+    #content {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+    }
+    .bg {
+        display: none;
+    }
+}
